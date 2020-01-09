@@ -1,0 +1,97 @@
+$main-font: Nunito Sans, sans-serif;
+$main-color:#ea7a90;
+$secundary-color:#d4dae6;
+$swatch-1:#f3f4f8;
+$swatch-2:#e0e0ea;
+$swatch-3:#f2959e;
+$swatch-4:#97969d;
+
+body {
+    font-family: $main-font;
+}
+
+.container {
+    width: 915px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.info {
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 206px;
+
+    .options {
+        position: absolute;
+        top: 188px;
+        left: 20px;
+    }
+
+        div {
+            margin-top:10px;
+        }
+
+    .settings {
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+
+    button {
+        position: absolute;
+        left: 63px;
+        top: 109px;
+    }
+}
+
+.profile {
+    position: relative;
+
+    img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        position: absolute;
+        left: 23px;
+        top: 25px;
+    }
+
+    .name {position: absolute;
+        top: 49px;
+        left: 110px;}
+}
+
+.cards {
+    background-color: $secundary-color;
+    position: relative;
+
+    .one {
+        position: absolute;
+        top: 26px;
+        left: 30px;
+    }
+
+    .two {
+        position: absolute;
+        right: 30px;
+        top:26px;
+    }
+
+    .group {
+        padding-top: 79px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 205px;
+        height: 217px;
+    }
+        img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }
+}
