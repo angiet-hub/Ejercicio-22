@@ -5,15 +5,19 @@ $swatch-1:#f3f4f8;
 $swatch-2:#e0e0ea;
 $swatch-3:#f2959e;
 $swatch-4:#97969d;
+$main-size: 15px;
+$secundary-size: 13px;
+$text-bold: bold;
 
 body {
     font-family: $main-font;
+    background-color: $swatch-4;
 }
 
 .container {
     width: 915px;
     display: flex;
-    margin: 0 auto;
+    margin: 34px auto;
 }
 
 .info {
@@ -21,17 +25,27 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 206px;
+    width: 427px;
+    color:$secundary-color;
 
     .options {
         position: absolute;
         top: 188px;
         left: 20px;
-    }
+
+        & :nth-child(2) {
+        color:$swatch-1;
+        }
 
         div {
             margin-top:10px;
+            padding: 4px;
         }
+
+        i {
+            padding-right: 12px;
+        }
+    }
 
     .settings {
         position: absolute;
@@ -41,11 +55,14 @@ body {
 
     button {
         position: absolute;
-        left: 63px;
-        top: 109px;
+        left: 109px;
+        top: 80px;
+        font-family: $main-font;
+        background-color: $main-color;
+        border: none;
+        color:$swatch-1;
     }
 }
-
 .profile {
     position: relative;
 
@@ -60,8 +77,11 @@ body {
 
     .name {position: absolute;
         top: 49px;
-        left: 110px;}
+        left: 110px;
+        font-size: $main-size;
+    }
 }
+
 
 .cards {
     background-color: $secundary-color;
@@ -71,27 +91,67 @@ body {
         position: absolute;
         top: 26px;
         left: 30px;
-    }
 
+        & :nth-child(1) {
+        color:$swatch-4;
+        font-size: $main-size;
+        font-weight: $text-bold;
+        }
+
+        & :nth-child(3) {
+        font-size: $secundary-size;
+        color:$swatch-3;
+        }
+    }
+    
     .two {
         position: absolute;
-        right: 30px;
+        right: 41px;
         top:26px;
+
+        & :nth-child(1) {
+            color:$swatch-4;
+            font-size: $main-size;
+        }
+
+        & :nth-child(3) {
+            font-size: $secundary-size;
+            color:$swatch-3;
+            font-weight: $text-bold;
+        }
     }
 
     .group {
-        padding-top: 79px;
+        padding: 71px 0px 30px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.card {
+    width: 205px;
+    height: 200px;
+    background-color: $swatch-1;
+    margin: 13px;
+    border-radius: 14px;
+    
+    img {
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    span {
+        padding: 9px;
+        color:$swatch-3;
+        font-weight: $text-bold;
+        font-size: $secundary-size;
     }
 
-    .card {
-        width: 205px;
-        height: 217px;
-    }
-        img {
-        width: 65px;
-        height: 65px;
-        border-radius: 50%;
+    p {
+        color:$swatch-4;
+        padding-left: 8px;
+        font-size: 12px;
     }
 }
