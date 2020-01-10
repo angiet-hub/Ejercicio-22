@@ -1,0 +1,103 @@
+$main-width: 95px;
+$main-height: 46px;
+$main-color: black;
+$main-background: rgb(201, 173, 173);
+$variation-one-background-color: green;
+$variation-one-hover:rgb(137, 226, 137);
+$variation-one-active:rgb(4, 43, 4);
+$variation-two-background-color: yellow;
+$variation-two-hover: rgb(236, 236, 158);
+$variation-two-active:rgb(94, 94, 4);
+$variation-three-background-color: red;
+$variation-three-hover:rgb(236, 136, 136);
+$variation-three-active:rgb(100, 4, 4);
+$outline-background-color: #ffffff; 
+$outline-hover: 1px;
+$outline-active: grey;
+$small-width: 50px;
+$small-height: 20px;
+$size-hover: scale(1.5);
+$size-active: white;
+$medium-width: 75px;
+$medium-height: 30px;
+$large-width:100px;
+$large-height: 50px;
+$rounded-border: 10px;
+$outline-border: 3px solid green;
+$outline-background-color: white;
+
+
+.button {
+    width: $main-width;
+    height: $main-height;
+    color: $main-color;
+    background-color: $main-background;
+    margin: 10px;
+
+    &.variation-one {
+        background-color: $variation-one-background-color;
+    }
+    &.variation-two {
+        background-color: $variation-two-background-color;
+    }
+    &.variation-three {
+        background-color: $variation-three-background-color;
+    }
+
+    &.button-small {
+        width: $small-width;
+        height: $small-height;
+    }
+    &.button-medium {
+        width: $medium-width;
+        height: $medium-height;
+    }
+    &.button-large {
+        width: $large-width;
+        height: $large-height;
+    }
+
+    &.button-rounded {
+        border-radius: $rounded-border;
+    }
+    &.button-outline {
+        border: $outline-border;
+        background-color: $outline-background-color;
+    }
+
+    &.variation-one:hover {
+        background-color: $variation-one-hover;
+    }
+
+    &.variation-two:hover {
+        background-color: $variation-two-hover;
+    }
+
+    &.variation-three:hover {
+        background-color:$variation-three-hover;
+    }
+
+    &.variation-one:active {
+        background-color: $variation-one-active;
+    }
+    &.variation-two:active {
+        background-color: $variation-two-active;
+    }
+    &.variation-three:active {
+        background-color: $variation-three-active;
+    }
+
+    &.button-small:hover + &.button-medium:hover + &.button-large:hover {
+        transform: $size-hover;
+    }
+    &.button-small:active + &.button-medium:active + &.button-large:active {
+        background-color: $size-active;
+    }
+    &.button-outline:hover {
+        border:$outline-hover;
+    }
+    &.button-outline:active {
+        background-color: $outline-active;
+    }
+    
+}

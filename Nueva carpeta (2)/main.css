@@ -1,0 +1,48 @@
+.button {
+  width: 95px;
+  height: 46px;
+  color: black;
+  background-color: #c9adad;
+  margin: 10px; }
+  .button.variation-one {
+    background-color: green; }
+  .button.variation-two {
+    background-color: yellow; }
+  .button.variation-three {
+    background-color: red; }
+  .button.button-small {
+    width: 50px;
+    height: 20px; }
+  .button.button-medium {
+    width: 75px;
+    height: 30px; }
+  .button.button-large {
+    width: 100px;
+    height: 50px; }
+  .button.button-rounded {
+    border-radius: 10px; }
+  .button.button-outline {
+    border: 3px solid green;
+    background-color: white; }
+  .button.variation-one:hover {
+    background-color: #89e289; }
+  .button.variation-two:hover {
+    background-color: #ecec9e; }
+  .button.variation-three:hover {
+    background-color: #ec8888; }
+  .button.variation-one:active {
+    background-color: #042b04; }
+  .button.variation-two:active {
+    background-color: #5e5e04; }
+  .button.variation-three:active {
+    background-color: #640404; }
+  .button.button-small:hover + .button.button-medium:hover + .button.button-large:hover {
+    transform: scale(1.5); }
+  .button.button-small:active + .button.button-medium:active + .button.button-large:active {
+    background-color: white; }
+  .button.button-outline:hover {
+    border: 1px; }
+  .button.button-outline:active {
+    background-color: grey; }
+
+/*# sourceMappingURL=main.css.map */
